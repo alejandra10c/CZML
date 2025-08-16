@@ -3,12 +3,21 @@ async function init() {
 
     const viewer = new Cesium.Viewer('cesiumContainer', {
         terrain: Cesium.Terrain.fromWorldTerrain(),
+        animation: true,   // muestra los controles de animación
+        timeline: true     // muestra la barra de tiempo
     });
 
     try {
         const ds = await Cesium.CzmlDataSource.load('escena.czml');
         viewer.dataSources.add(ds);
         await viewer.zoomTo(ds);
+
+        // 🚀 Arrancar animación automáticamente
+        viewer.clock.shouldAnimate = true;
+
+        // 🔁 (opcional) hacer que el ciclo nunca se detenga
+        viewer.clock.clockRange = Cesium.ClockRange.LOOP_STOP;
+
     } catch (e) {
         console.error('Error cargando CZML:', e);
     }
