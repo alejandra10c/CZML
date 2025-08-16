@@ -1,0 +1,40 @@
+[
+  {
+    "id": "document",
+    "name": "Inundación",
+    "version": "1.0",
+    "clock": {
+      "interval": "2025-08-16T00:00:00Z/2025-08-16T00:01:00Z",
+      "currentTime": "2025-08-16T00:00:00Z",
+      "multiplier": 10,
+      "range": "LOOP_STOP"
+    }
+  },
+  {
+    "id": "inundacion",
+    "name": "Zona inundada",
+    "polygon": {
+      "positions": {
+        "cartographicDegrees": [
+          -74.1, 4.6, 0,
+          -74.0, 4.6, 0,
+          -74.0, 4.7, 0,
+          -74.1, 4.7, 0
+        ]
+      },
+      "material": {
+        "solidColor": {
+          "color": {
+            "interval": "2025-08-16T00:00:00Z/2025-08-16T00:01:00Z",
+            "epoch": "2025-08-16T00:00:00Z",
+            "rgba": [
+              { "epoch": "2025-08-16T00:00:00Z", "number": [0, 0, 255, 50] },
+              { "epoch": "2025-08-16T00:00:30Z", "number": [0, 0, 255, 200] },
+              { "epoch": "2025-08-16T00:01:00Z", "number": [0, 0, 255, 50] }
+            ]
+          }
+        }
+      }
+    }
+  }
+]
