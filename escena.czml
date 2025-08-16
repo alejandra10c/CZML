@@ -1,133 +1,122 @@
 [
   {
     "id": "document",
-    "name": "Ejemplo CZML",
+    "name": "Ciudades de Colombia",
     "version": "1.0",
     "clock": {
-      "interval": "2025-08-01T00:00:00Z/2025-08-29T23:59:59Z",
-      "currentTime": "2025-08-01T01:00:00Z",
-      "multiplier": 510000
+      "interval": "2025-08-16T00:00:00Z/2025-08-16T00:00:40Z",
+      "currentTime": "2025-08-16T00:00:00Z",
+      "multiplier": 1,
+      "range": "LOOP_STOP"
     }
   },
   {
-    "id": "bogota",
-    "name": "Bogotá - Círculo",
+    "id": "Bogotá",
+    "name": "Bogotá",
     "position": {
-      "cartographicDegrees": [-74.096, 4.629, 0]
-    },
-    "ellipse": {
-      "semiMinorAxis": 25000,
-      "semiMajorAxis": 25000,
-      "height": 0,
-      "heightReference": "RELATIVE_TO_GROUND",
-      "extrudedHeight": [
-        { "interval": "2025-08-01T00:00:00Z/2025-08-06T23:59:59Z", "number": 100 },
-        { "interval": "2025-08-07T00:00:00Z/2025-08-13T23:59:59Z", "number": 300 },
-        { "interval": "2025-08-14T00:00:00Z/2025-08-20T23:59:59Z", "number": 500 },
-        { "interval": "2025-08-21T00:00:00Z/2025-08-26T23:59:59Z", "number": 700 },
-        { "interval": "2025-08-27T00:00:00Z/2025-08-29T23:00:00Z", "number": 900 }
-      ],
-      "extrudedHeightReference": "RELATIVE_TO_GROUND",
-      "material": {
-        "solidColor": {
-          "color": { "rgba": [255, 0, 0, 100] }
-        }
-      }
-    }
-  },
-  {
-    "id": "medellin",
-    "name": "Medellín - Cuadrado",
-    "position": {
-      "cartographicDegrees": [-75.5812, 6.2442, 1500]
+      "cartographicDegrees": [-74.08175, 4.60971, 0]
     },
     "polygon": {
       "positions": {
         "cartographicDegrees": [
-          -75.6062, 6.2192, 1500,
-          -75.5562, 6.2192, 1500,
-          -75.5562, 6.2692, 1500,
-          -75.6062, 6.2692, 1500,
-          -75.6062, 6.2192, 1500
+          -74.1, 4.61, 0,
+          -74.05, 4.61, 0,
+          -74.05, 4.58, 0,
+          -74.1, 4.58, 0,
+          -74.1, 4.61, 0
         ]
       },
-      "heightReference": "RELATIVE_TO_GROUND",
-      "extrudedHeight": [
-        { "interval": "2025-08-01T00:00:00Z/2025-08-06T23:59:59Z", "number": 100 },
-        { "interval": "2025-08-07T00:00:00Z/2025-08-13T23:59:59Z", "number": 300 },
-        { "interval": "2025-08-14T00:00:00Z/2025-08-20T23:59:59Z", "number": 500 },
-        { "interval": "2025-08-21T00:00:00Z/2025-08-26T23:59:59Z", "number": 700 },
-        { "interval": "2025-08-27T00:00:00Z/2025-08-29T23:00:00Z", "number": 900 }
-      ],
-      "extrudedHeightReference": "RELATIVE_TO_GROUND",
       "material": {
-        "solidColor": {
-          "color": { "rgba": [0, 0, 255, 100] }
-        }
-      }
+        "solidColor": { "color": { "rgba": [0, 0, 255, 150] } }
+      },
+      "extrudedHeight": {
+        "epoch": "2025-08-16T00:00:00Z",
+        "number": [0, 0, 10, 50000]
+      },
+      "heightReference": "RELATIVE_TO_GROUND",
+      "extrudedHeightReference": "RELATIVE_TO_GROUND"
     }
   },
   {
-    "id": "barranquilla",
-    "name": "Barranquilla - Triángulo",
+    "id": "Medellín",
+    "name": "Medellín",
     "position": {
-      "cartographicDegrees": [-74.7813, 10.9685, 0]
+      "cartographicDegrees": [-75.5812, 6.2442, 0]
     },
     "polygon": {
       "positions": {
         "cartographicDegrees": [
-          -74.7813, 11.0185, 0,
-          -74.8313, 10.9185, 0,
-          -74.7313, 10.9185, 0,
-          -74.7813, 11.0185, 0
+          -75.6, 6.25, 0,
+          -75.56, 6.25, 0,
+          -75.56, 6.22, 0,
+          -75.6, 6.22, 0,
+          -75.6, 6.25, 0
         ]
       },
-      "heightReference": "RELATIVE_TO_GROUND",
-      "extrudedHeight": [
-        { "interval": "2025-08-01T00:00:00Z/2025-08-06T23:59:59Z", "number": 100 },
-        { "interval": "2025-08-07T00:00:00Z/2025-08-13T23:59:59Z", "number": 300 },
-        { "interval": "2025-08-14T00:00:00Z/2025-08-20T23:59:59Z", "number": 500 },
-        { "interval": "2025-08-21T00:00:00Z/2025-08-26T23:59:59Z", "number": 700 },
-        { "interval": "2025-08-27T00:00:00Z/2025-08-29T23:00:00Z", "number": 900 }
-      ],
-      "extrudedHeightReference": "RELATIVE_TO_GROUND",
       "material": {
-        "solidColor": {
-          "color": { "rgba": [0, 255, 0, 100] }
-        }
-      }
+        "solidColor": { "color": { "rgba": [255, 0, 0, 150] } }
+      },
+      "extrudedHeight": {
+        "epoch": "2025-08-16T00:00:10Z",
+        "number": [0, 0, 10, 40000]
+      },
+      "heightReference": "RELATIVE_TO_GROUND",
+      "extrudedHeightReference": "RELATIVE_TO_GROUND"
     }
   },
   {
-    "id": "cali",
-    "name": "Cali - Rombo",
+    "id": "Cali",
+    "name": "Cali",
     "position": {
-      "cartographicDegrees": [-76.5319, 3.4516, 1000]
+      "cartographicDegrees": [-76.5319, 3.4516, 0]
     },
     "polygon": {
       "positions": {
         "cartographicDegrees": [
-          -76.5319, 3.4816, 1000,
-          -76.5019, 3.4516, 1000,
-          -76.5319, 3.4216, 1000,
-          -76.5619, 3.4516, 1000,
-          -76.5319, 3.4816, 1000
+          -76.5319, 3.4816, 0,
+          -76.5019, 3.4516, 0,
+          -76.5319, 3.4216, 0,
+          -76.5619, 3.4516, 0,
+          -76.5319, 3.4816, 0
         ]
       },
-      "heightReference": "RELATIVE_TO_GROUND",
-      "extrudedHeight": [
-        { "interval": "2025-08-01T00:00:00Z/2025-08-06T23:59:59Z", "number": 100 },
-        { "interval": "2025-08-07T00:00:00Z/2025-08-13T23:59:59Z", "number": 300 },
-        { "interval": "2025-08-14T00:00:00Z/2025-08-20T23:59:59Z", "number": 500 },
-        { "interval": "2025-08-21T00:00:00Z/2025-08-26T23:59:59Z", "number": 700 },
-        { "interval": "2025-08-27T00:00:00Z/2025-08-29T23:00:00Z", "number": 900 }
-      ],
-      "extrudedHeightReference": "RELATIVE_TO_GROUND",
       "material": {
-        "solidColor": {
-          "color": { "rgba": [255, 255, 0, 100] }
-        }
-      }
+        "solidColor": { "color": { "rgba": [0, 255, 0, 150] } }
+      },
+      "extrudedHeight": {
+        "epoch": "2025-08-16T00:00:20Z",
+        "number": [0, 0, 10, 30000]
+      },
+      "heightReference": "RELATIVE_TO_GROUND",
+      "extrudedHeightReference": "RELATIVE_TO_GROUND"
+    }
+  },
+  {
+    "id": "Barranquilla",
+    "name": "Barranquilla",
+    "position": {
+      "cartographicDegrees": [-74.8069, 10.9685, 0]
+    },
+    "polygon": {
+      "positions": {
+        "cartographicDegrees": [
+          -74.82, 10.97, 0,
+          -74.79, 10.97, 0,
+          -74.79, 10.95, 0,
+          -74.82, 10.95, 0,
+          -74.82, 10.97, 0
+        ]
+      },
+      "material": {
+        "solidColor": { "color": { "rgba": [255, 255, 0, 150] } }
+      },
+      "extrudedHeight": {
+        "epoch": "2025-08-16T00:00:30Z",
+        "number": [0, 0, 10, 20000]
+      },
+      "heightReference": "RELATIVE_TO_GROUND",
+      "extrudedHeightReference": "RELATIVE_TO_GROUND"
     }
   }
 ]
+
